@@ -1,0 +1,50 @@
+﻿@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Drag and drop overlay */
+.drag-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(37, 99, 235, 0.2);
+  border: 2px dashed rgb(59, 130, 246);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+  pointer-events: none;
+}
+
+/* File upload animation */
+@keyframes pulse-border {
+  0%, 100% { border-color: rgb(59, 130, 246); }
+  50% { border-color: rgb(147, 197, 253); }
+}
+
+.drag-active {
+  animation: pulse-border 1.5s ease-in-out infinite;
+}

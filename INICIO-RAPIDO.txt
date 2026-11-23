@@ -1,0 +1,53 @@
+﻿========================================
+   PulpoAI - Inicio Rapido
+========================================
+
+UBICACION:
+  C:\Users\sa\Desktop\pulpoai
+
+INICIAR LA APLICACION:
+
+Opcion 1 - Script:
+  start.bat
+
+Opcion 2 - Manual:
+  cd C:\Users\sa\Desktop\pulpoai
+  npm run dev
+
+ACCEDER:
+  http://localhost:3000
+
+PROVEEDORES DE IA:
+  - OpenAI (GPT-4, GPT-3.5)
+  - Anthropic (Claude 3)
+  - Google Gemini
+  - Groq (Ultra rapido)
+  - Ollama (Local)
+
+CARACTERISTICAS:
+  - Chat multi-proveedor
+  - Interfaz unificada
+  - Sin dependencias externas
+  - 100% independiente
+
+CONFIGURACION:
+  Selecciona proveedor en la barra lateral
+  Ingresa tu API key (opcional)
+  Comienza a chatear
+
+ARQUITECTURA:
+  - Next.js 15
+  - React 19
+  - Tailwind CSS
+  - SQLite
+  - TypeScript
+
+PROXIMAS CARACTERISTICAS:
+  - Workflows visuales
+  - Agentes de IA
+  - Asistente de codigo
+  - Plugins
+  - API publica
+
+LICENCIA: MIT
+========================================
